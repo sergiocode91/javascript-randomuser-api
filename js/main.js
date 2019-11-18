@@ -4,8 +4,8 @@ document.querySelector('.button--click').addEventListener('click', () => {
 	fetch('https://randomuser.me/api/')
 	.then( res => res.json() )
 	.then( data => {
-		// contenido.innerHTML = `${data}`
-		console.log(data.results[0]);
+		const date = new Date(data.results[0].dob.date);
+		const dateFull = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
 		contenido.innerHTML = `
 			<div class="thumbnail">
 				<img src="${data.results[0].picture.large}" alt="">
@@ -21,7 +21,7 @@ document.querySelector('.button--click').addEventListener('click', () => {
 				</div>
 				<div class="col-lg-6">
 					<span>My birthday is</span>
-					<h3>${data.results[0].dob.date}</h3>
+					<h3>${dateFull}</h3>
 				</div>
 				<div class="col-lg-6">
 					<span>My address is</span>
