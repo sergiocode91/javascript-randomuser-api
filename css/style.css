@@ -21,14 +21,10 @@ body{
     color: white;
 	padding: 10px 29px;
 	margin-left: auto;
-	transition: all .3s;
 	text-transform: uppercase;
     border: 1px solid rgba(255, 255, 255, 0.36);
     border-radius: 100px;
     background-color: rgba(255, 255, 255, 0.27);
-}
-.main-container__button:hover{
-	background-color: rgba(255, 255, 255, 0.47);
 }
 .main-container__button:focus{
 	outline: none;
@@ -75,4 +71,20 @@ body{
 }
 .pl-md{
 	width: 40%;
+}
+.button-animation{
+    box-shadow: 0 0 0 rgb(255, 255, 255);
+    animation: pulse 2s infinite;
+}
+@keyframes
+pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgb(255,255,255,0.5);
+    }
+    70%{
+        box-shadow: 0 0 0 20px rgba(255,255,255,0);
+    }
+    100%{
+        box-shadow:0 0 0 0 rgba(255,255,255,0);
+    }
 }
