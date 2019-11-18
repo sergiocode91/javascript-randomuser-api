@@ -1,4 +1,4 @@
-<img src="https://github.com/srojas091/angular-listar-productos/blob/master/src/assets/images/angular.png" alt="angular" width="100" height="100">
+<img src="https://github.com/srojas091/javascript-randomuser-api/blob/master/images/js-logo.png" alt="javascript" width="100" height="100">
 
 # API REST Random User
 
